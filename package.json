@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.11",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.22.12"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "console": "hardhat console --network localhost",
+    "deploy": "hardhat ignition deploy ./ignition/modules/DAppsNFT.ts --network localhost --parameters ./ignition/parameters.json ",
+    "deploy:sepolia": "hardhat ignition deploy ./ignition/modules/DAppsNFT.ts --network sepolia --parameters ./ignition/parameters.json",
+    "verify:sepolia": "hardhat verify --network sepolia"
+  }
+}
